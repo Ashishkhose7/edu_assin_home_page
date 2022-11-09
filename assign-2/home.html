@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="../img/burger.jpg" type="image/x-icon">
+    <title>Foodies world</title>
+</head>
+
+<body>
+    <!-- navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark"
+        style="background-image: linear-gradient( 89.4deg,  rgba(74,77,103,1) -4.3%, rgba(119,125,165,1) 102.1% );">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#"><span>F</span>oodies</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Dashboard</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <button type="button" class="btn btn-dark mx-4" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">Login</button>
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- banner -->
+    <div class="banner">
+        <div class="cont-fent">
+            <div class="content">
+                <h1 class="cont-head"><span>F</span>oodies</h1>
+                <p class="cont-head2">Discover the best food & drinks in your area</p>
+                <div class="row">
+                    <div class="col-md-7 m-auto d-flex">
+                        <input class="form-control mx-4" list="datalistOptions" id="exampleDataList"
+                            placeholder="Please type location">
+                        <datalist id="datalistOptions">
+                            <option value="Conrad, 7, Mangaldas Rd, Sangamvadi, Pune">
+                            <option value="Lobby Level West, Senapati Bapat Rd, Shivajinagar, Pune">
+                            <option value="Sheraton Grand Pune Bund Garden , Pune">
+                            <option value="Koregaon Park, Pune">
+                            <option value="Residences Weikfield IT Park, Nagar Rd, Viman Nagar, Pune">
+                        </datalist>
+                        <div class="input-group">
+                            <input type="search" class="form-control rounded bg-light"
+                                placeholder="Search for restaurants">
+                            <button type="button" class="btn btn-outline-danger bg-dark ">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- items-cards  -->
+    <div class="container-fluid">
+        <hr>
+        <h2 class="cont-head3 mx-5">Order food from favourite restaurants near you.</h2>
+        <hr>
+        <div class="card-container my-2 mx-5 d-flex justify-content-center">
+            <div class="card-item p-3 mx-2">
+                    <div class="img-div">
+                        <img src="./img/burger.jpg" alt="">
+                    </div>
+                    <div class="content-div">
+                        <h5 class="my-2">Burger King</h5>
+                        <p style="color:rgb(90, 85, 85) ;">Burgers, American</p>
+                        <div class="price-detail">
+                            <p class="fw-bold rating"> <i class="bi bi-star-fill m-1 star-icon" onclick="rating()"></i>4.5
+                            </p>
+                            <p class="fw-bold">₹399</p>
+                        </div>
+                        <hr class="m-0">
+                        <p class="coupen my-2">50% off | Use WELCOME50</p>
+                        <hr class="m-0">
+                    <h6 class="order my-2"><a href="" class="order">Order Now</a></h6>
+                </div>
+            </div>
+            <div class="card-item p-3">
+                <div class="img-div">
+                    <img src="./img/pizza.jpg" alt="">
+                </div>
+                <div class="content-div">
+                    <h5 class="my-2">Veg Supreme Pizza</h5>
+                    <p style="color:rgb(90, 85, 85) ;">Fast Food</p>
+                    <div class="price-detail">
+                        <p class="fw-bold rating"> <i class="bi bi-star-fill m-1 star-icon" onclick="rating()"></i>4.5
+                        </p>
+                        <p class="fw-bold">₹450</p>
+                    </div>
+                    <hr class="m-0">
+                    <p class="coupen my-2">30% off | Use WELCOME30</p>
+                    <hr class="m-0">
+                    <h6 class="order my-2"><a href="" class="order">Order Now</a></h6>
+                </div>
+            </div>
+
+            <div class="card-item p-3">
+                <div class="img-div">
+                    <img src="./img/HF_App_web_landing_page_newbanners_desktop_1199x650 - Copy (2).jpg" alt="">
+                </div>
+                <div class="content-div">
+                    <h5 class="my-2">Chaayos chai</h5>
+                    <p style="color:rgb(90, 85, 85) ;">Dessert Bakery, Home</p>
+                    <div class="price-detail">
+                        <p class="fw-bold rating"> <i class="bi bi-star-fill m-1 star-icon" onclick="rating()"></i>4.1
+                        </p>
+                        <p class="fw-bold">₹99</p>
+                    </div>
+                    <hr class="m-0">
+                    <p class="coupen my-2">5% off | Use WELCOME5</p>
+                    <hr class="m-0">
+                    <h6 class="order my-2"><a href="" class="order">Order Now</a></h6>
+                </div>
+            </div>
+
+            <div class="card-item p-3">
+                <div class="img-div">
+                    <img src="./img/HF_App_web_landing_page_newbanners_desktop_1199x650 - Copy (3).jpg" alt="">
+                </div>
+                <div class="content-div">
+                    <h5 class="my-2">Merwans Cake Shop</h5>
+                    <p style="color:rgb(90, 85, 85) ;">Dessert Bakery</p>
+                    <div class="price-detail">
+                        <p class="fw-bold rating"> <i class="bi bi-star-fill m-1 star-icon" onclick="rating()"></i>4.2
+                        </p>
+                        <p class="fw-bold">₹349</p>
+                    </div>
+                    <hr class="m-0">
+                    <p class="coupen my-2">30% off | Use WELCOME30</p>
+                    <hr class="m-0">
+                    <h6 class="order my-2"><a href="" class="order">Order Now</a></h6>
+                </div>
+            </div>
+
+            <div class="card-item p-3">
+                <div class="img-div">
+                    <img src="./img/HF_App_web_landing_page_newbanners_desktop_1199x650 - Copy (4).jpg" alt="">
+                </div>
+                <div class="content-div">
+                    <h5 class="my-2">McDonald's</h5>
+                    <p style="color:rgb(90, 85, 85) ;">Burgers, Beverages, Cake</p>
+                    <div class="price-detail">
+                        <p class="fw-bold rating"> <i class="bi bi-star-fill m-1 star-icon" onclick="rating()"></i>3.9
+                        </p>
+                        <p class="fw-bold">₹400</p>
+                    </div>
+                    <hr class="m-0">
+                    <p class="coupen my-2">30% off | Use WELCOME30</p>
+                    <hr class="m-0">
+                    <h6 class="order my-2"><a href="" class="order">Order Now</a></h6>
+                </div>
+            </div>
+
+            <div class="card-item p-3">
+                <div class="img-div">
+                    <img src="./img/starbucks.jpg" alt="">
+                </div>
+                <div class="content-div">
+                    <h5 class="my-2">Starbucks Coffee</h5>
+                    <p style="color:rgb(90, 85, 85) ;">Beverages, Ice-Cream</p>
+                    <div class="price-detail">
+                        <p class="fw-bold rating"> <i class="bi bi-star-fill m-1 star-icon" onclick="rating()"></i>4.5
+                        </p>
+                        <p class="fw-bold">₹250</p>
+                    </div>
+                    <hr class="m-0">
+                    <p class="coupen my-2">20% off | Use WELCOME20</p>
+                    <hr class="m-0">
+                    <h6 class="order my-2"><a href="" class="order">Order Now</a></h6>
+                </div>
+            </div>
+
+            <div class="card-item p-3">
+                <div class="img-div">
+                    <img src="./img/udupi.jpg" alt="">
+                </div>
+                <div class="content-div">
+                    <h5 class="my-2">Udupi Tiffins</h5>
+                    <p style="color:rgb(90, 85, 85) ;">South Indian</p>
+                    <div class="price-detail">
+                        <p class="fw-bold rating"> <i class="bi bi-star-fill m-1 star-icon" onclick="rating()"></i>4.6
+                        </p>
+                        <p class="fw-bold">₹350</p>
+                    </div>
+                    <hr class="m-0">
+                    <p class="coupen my-2">50% off | Use WELCOME50</p>
+                    <hr class="m-0">
+                    <h6 class="order my-2"><a href="" class="order">Order Now</a></h6>
+                </div>
+            </div>
+
+            <div class="card-item p-3">
+                <div class="img-div">
+                    <img src="./img/sandwitch.jpg" alt="">
+                </div>
+                <div class="content-div">
+                    <h5 class="my-2">Sandwitch Shack</h5>
+                    <p style="color:rgb(90, 85, 85) ;">Snacks</p>
+                    <div class="price-detail">
+                        <p class="fw-bold rating"> <i class="bi bi-star-fill m-1 star-icon" onclick="rating()"></i>4.1
+                        </p>
+                        <p class="fw-bold">₹300</p>
+                    </div>
+                    <hr class="m-0">
+                    <p class="coupen my-2">10% off | Use WELCOME10</p>
+                    <hr class="m-0">
+                    <h6 class="order my-2"><a href="" class="order">Order Now</a></h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
