@@ -16,6 +16,7 @@
 </head>
 
 <body>
+
     <!-- navigation bar -->
     <nav class="navbar navbar-expand-lg navbar-dark"
         style="background-image: linear-gradient( 89.4deg,  rgba(74,77,103,1) -4.3%, rgba(119,125,165,1) 102.1% );">
@@ -27,7 +28,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav me-auto mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
@@ -54,21 +55,14 @@
                 <h1 class="cont-head"><span>F</span>oodies</h1>
                 <p class="cont-head2">Discover the best food & drinks in your area</p>
                 <div class="row">
-                    <div class="col-md-7 m-auto d-flex">
-                        <input class="form-control mx-4" list="datalistOptions" id="exampleDataList"
-                            placeholder="Please type location">
-                        <datalist id="datalistOptions">
-                            <option value="Conrad, 7, Mangaldas Rd, Sangamvadi, Pune">
-                            <option value="Lobby Level West, Senapati Bapat Rd, Shivajinagar, Pune">
-                            <option value="Sheraton Grand Pune Bund Garden , Pune">
-                            <option value="Koregaon Park, Pune">
-                            <option value="Residences Weikfield IT Park, Nagar Rd, Viman Nagar, Pune">
-                        </datalist>
-                        <div class="input-group">
-                            <input type="search" class="form-control rounded bg-light"
-                                placeholder="Search for restaurants">
-                            <button type="button" class="btn btn-outline-danger bg-dark ">Search</button>
-                        </div>
+                    <div class="col-sm-7 m-auto d-flex">
+                        <select id="location" class="form-select w-50 me-2" aria-label="Default select example" onchange="getRestaurant()">
+                            <option selected>Please Select Location</option>
+                        </select>
+                        <select id="getRestaurant" class="form-select w-60" aria-label="Default select example">
+                            <option selected>Please Select Restaurants</option>
+                        </select>
+                        <button type="button" class="btn btn-outline-danger bg-dark ">Search</button>
                     </div>
                 </div>
             </div>
@@ -81,20 +75,20 @@
         <hr>
         <div class="card-container my-2 mx-5 d-flex justify-content-center">
             <div class="card-item p-3 mx-2">
-                    <div class="img-div">
-                        <img src="./img/burger.jpg" alt="">
+                <div class="img-div">
+                    <img src="./img/burger.jpg" alt="">
+                </div>
+                <div class="content-div">
+                    <h5 class="my-2">Burger King</h5>
+                    <p style="color:rgb(90, 85, 85) ;">Burgers, American</p>
+                    <div class="price-detail">
+                        <p class="fw-bold rating"> <i class="bi bi-star-fill m-1 star-icon" onclick="rating()"></i>4.5
+                        </p>
+                        <p class="fw-bold">₹399</p>
                     </div>
-                    <div class="content-div">
-                        <h5 class="my-2">Burger King</h5>
-                        <p style="color:rgb(90, 85, 85) ;">Burgers, American</p>
-                        <div class="price-detail">
-                            <p class="fw-bold rating"> <i class="bi bi-star-fill m-1 star-icon" onclick="rating()"></i>4.5
-                            </p>
-                            <p class="fw-bold">₹399</p>
-                        </div>
-                        <hr class="m-0">
-                        <p class="coupen my-2">50% off | Use WELCOME50</p>
-                        <hr class="m-0">
+                    <hr class="m-0">
+                    <p class="coupen my-2">50% off | Use WELCOME50</p>
+                    <hr class="m-0">
                     <h6 class="order my-2"><a href="" class="order">Order Now</a></h6>
                 </div>
             </div>
@@ -232,6 +226,7 @@
             </div>
         </div>
     </div>
+    <script src="./home.js"></script>
 </body>
 
 </html>
