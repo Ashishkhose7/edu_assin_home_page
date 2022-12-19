@@ -46,10 +46,10 @@ let getRestaurant = () => {
 let star = document.getElementsByClassName("star-icon")
 for (const key in star) {
  star[key].onclick = ()=>{
-  if(star[key].style.color=='yellow'){
+  if(star[key].style.color=='gold'){
     star[key].style.color = "lightyellow"
   }else{
-    star[key].style.color = "yellow"
+    star[key].style.color = "gold"
   }
  }
 }
